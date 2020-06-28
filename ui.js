@@ -68,7 +68,6 @@ $(async function () {
   ///***********************************************************
 
   $submitForm.on("submit", async function (evt) {
-    debugger;
     evt.preventDefault(); // no page refresh
 
     // grab all the info from the form
