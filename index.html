@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hack or Snooze</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -10,30 +12,32 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <title>Test Hack or snooze</title>
   </head>
+
   <body>
     <nav>
       <b
-        ><a href="#" class="nav-link navbar-brand" id="nav-all"
+        ><a class="nav-link navbar-brand" href="#" id="nav-all"
           >Hack or Snooze</a
         ></b
       >
-      <section class="main-nav-links" id="nav-main-links">
+      <section class="main-nav-links hidden">
         <span>|</span>
-        <a href="#" class="nav-link" id="nav-submit">submit</a>
+        <a class="nav-link" href="#" id="nav-submit">submit</a>
         <span>|</span>
-        <a href="#" class="nav-link" id="nav-favorites">favorites</a>
+        <a class="nav-link" href="#" id="nav-favorites">favorites</a>
         <span>|</span>
-        <a href="#" class="nav-link" id="nav-my-stories">my stories</a>
+        <a class="nav-link" href="#" id="nav-my-stories">my stories</a>
       </section>
-      <a href="#" class="nav-link nav-right" id="nav-login"
+      <a class="nav-link nav-right" href="#" id="nav-login"
         >login/create user</a
       >
       <span class="nav-link nav-right hidden" id="nav-welcome">
-        <a href="" id="nav-user-profile"></a>
+        <a href="#" id="nav-user-profile"></a>
       </span>
-      <a href="" class="hidden" id="nav-logout"><small>(logout)</small></a>
+      <a class="hidden" id="nav-logout" href="#">
+        <small>(logout)</small>
+      </a>
     </nav>
     <section class="articles-container container">
       <form action="" class="hidden" id="submit-form">
@@ -43,15 +47,15 @@
         </div>
         <div>
           <label for="title">title</label>
-          <input required type="text" id="title" placeholder="article title" />
+          <input id="title" required type="text" placeholder="article title" />
         </div>
         <div>
           <label for="url">url</label>
-          <input required type="url" id="url" placeholder="article url" />
+          <input id="url" required type="url" placeholder="article url" />
         </div>
         <button type="submit">submit</button>
+        <hr />
       </form>
-      <hr />
       <article>
         <ol id="all-articles-list" class="articles-list">
           <h3>Loading...</h3>
@@ -126,13 +130,13 @@
         <div id="profile-account-date">Account Created:</div>
       </section>
     </section>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/axios/dist/axios.js"></script>
-    <script src="api-classes.js"></script>
-    <script src="ui.js"></script>
   </body>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://unpkg.com/axios/dist/axios.js"></script>
+  <script src="api-classes.js"></script>
+  <script src="ui.js"></script>
 </html>
